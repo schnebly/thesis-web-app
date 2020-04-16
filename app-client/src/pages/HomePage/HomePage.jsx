@@ -2,22 +2,13 @@ import React from 'react';
 
 import './HomePage.styles.css';
 
-class HomePage extends React.Component {
-    constructor() {
-        super();
+import CardDirectory from '../../components/CardDirectory/CardDirectory';
 
-        this.state = {
-            something: null
-        }
-    }
-
-    render() {
-        return (
-            <div className='home-page'>
-                This is the Home Page!
-            </div>
-        )
-    }
-}
+const HomePage = () => (
+    <div className='home-page'>
+        <CardDirectory />
+    </div>
+);
+            
 
 export default HomePage;
