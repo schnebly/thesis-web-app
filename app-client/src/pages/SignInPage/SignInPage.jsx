@@ -1,23 +1,23 @@
 import React from 'react';
 
+import { Row, Col } from 'reactstrap';
+
 import './SignInPage.styles.css';
+import SignUp from '../../components/SignUp/SignUp';
+import SignIn from '../../components/SignIn/SignIn';
 
-class SignInPage extends React.Component {
-    constructor() {
-        super();
+const SignInPage = () => (
+    <div className='sign-in-page'>
+        <Row>
+            <Col>
+                <SignIn />
+            </Col>
+            <Col>
+                <SignUp />
+            </Col>
+        </Row>
+    </div>
+)
 
-        this.state = {
-            something: null
-        }
-    }
-
-    render() {
-        return (
-            <div className='sign-in-page'>
-                This is the Sign In Page!
-            </div>
-        )
-    }
-}
 
 export default SignInPage;

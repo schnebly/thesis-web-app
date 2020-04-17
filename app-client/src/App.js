@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage/HomePage';
 
 import Header from './components/Header/Header';
 import SignInPage from './pages/SignInPage/SignInPage';
+import DemoPage from './pages/DemoPage/DemoPage';
 
 class App extends React.Component {
   constructor() {
@@ -22,6 +23,7 @@ class App extends React.Component {
         <Header sessionUser={this.state.sessionUser}/>
         <Route component={HomePage} path='/' exact/>
         <Route component={SignInPage} path='/signin' exact/>
+        <Route component={DemoPage} path='/demo' exact />
       </div>
     );
   }
