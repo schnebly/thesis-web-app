@@ -1,5 +1,9 @@
 .card {
-    width:45%;
+    width:30%;
     margin: 1%;
 }       
+
+.card-body {
+    height: 220px;
+}
     

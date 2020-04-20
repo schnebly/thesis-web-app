@@ -1,3 +1,4 @@
 thesis-venv
 app-client/node_modules
 .DS_Store
+.Rhistory

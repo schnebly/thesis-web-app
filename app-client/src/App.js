@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage/HomePage';
 import Header from './components/Header/Header';
 import SignInPage from './pages/SignInPage/SignInPage';
 import DemoPage from './pages/DemoPage/DemoPage';
+import TwitterPage from './pages/TwitterPage/TwitterPage';
 
 class App extends React.Component {
   constructor() {
@@ -24,6 +25,7 @@ class App extends React.Component {
         <Route component={HomePage} path='/' exact/>
         <Route component={SignInPage} path='/signin' exact/>
         <Route component={DemoPage} path='/demo' exact />
+        <Route component={TwitterPage} path='/twitter-bot' exact />
       </div>
     );
   }

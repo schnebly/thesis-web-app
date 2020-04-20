@@ -36,13 +36,13 @@ class Header extends React.Component {
 
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink href="/twitter-bot/">Bot Detection</NavLink>
+                            <NavLink href="/twitter-bot/">Bot Detection Paper</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="/TF-IDF/">TF-IDF</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/cosine/">Cosine Similarity</NavLink>
+                            <NavLink href="/cosine/">TextRank</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="/entropy/">Entropy</NavLink>
