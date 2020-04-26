@@ -1,4 +1,5 @@
 import React from 'react';
+import Axios from 'axios';
 
 import './DemoPage.styles.css';
 
@@ -27,10 +28,18 @@ class DemoPage extends React.Component {
             alert('Please select an algorithm from the dropdown menu');
             return;
         }
-        console.log(this.state);
-        alert('API POST');
-
-        this.setState({outputSummary: "Example Output Summary"});
+        // console.log(this.state);
+        Axios
+            .post('/api/entropy', {inputText: `${this.state.inputText}`})
+            .then( (response) => {
+                console.log(response);
+                this.setState({outputSummary: `${response.data}`});
+            })
+            .catch(function (error) {
+                console.log(error);
+                console.error(error);
+                alert(error);
+            });
     }
 
     changeAlgo = (event) => {
